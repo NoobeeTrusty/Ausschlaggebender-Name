@@ -1,9 +1,10 @@
 public class Dozierender {
     private String name;
     private String fakultaet;
-    private String bueronummer;
+    private int bueronummer;
+    private StringBuilder[] feedback = new StringBuilder[20];
 
-    public Dozierender(String name, String fakultaet, String bueronummer) {
+    public Dozierender(String name, String fakultaet, int bueronummer) {
         this.name = name;
         this.fakultaet = fakultaet;
         this.bueronummer = bueronummer;
@@ -17,11 +18,26 @@ public class Dozierender {
         return fakultaet;
     }
 
-    public String getBueronummer() {
+    public int getBueronummer() {
         return bueronummer;
+    }
+
+    public void zeigeFeedback() {
+        for (int i = 0; i < this.feedback.length; i++) {
+            System.out.println("Feedback " + (i+1) + ": " + this.feedback[i]);
+        }
     }
 
     public void frageBeantworten(Studierender student, String antwort) {
         System.out.println("Dozierender " + name + " beantwortet die Frage von " + student.getName() + ": " + antwort);
     }
+
+    public void feedbackErhalten(Studierender student, String feedback) {
+        if (this.feedback.length < 20) {
+            this.feedback.append(student.getName() + ": " + feedback + "\n");
+        } else {
+            System.out.println("Feedback-Speicher ist voll. Kein weiteres Feedback möglich.");
+        }
+    }
+
 }
