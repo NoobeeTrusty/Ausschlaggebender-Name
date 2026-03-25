@@ -23,7 +23,12 @@ public class Studierender {
     }
 
     public void frageStellen(Dozierender dozierender, String frage) {
-        System.out.println("Studierender " + name + "stellt dem Dozierenden " + dozierender.getDozierender() "die Frage: " + frage);
+        System.out.println("Studierender " + name + " stellt dem Dozierenden " + dozierender.getName() + " die Frage: " + frage);
     }
+
+    public void sprechstundenanfrage(Dozierender dozierender, String anfrage) {
+        System.out.println("Studierender " + name + " sendet eine Sprechstundenanfrage an den Dozierenden " + dozierender.getName() + "  der Fakultät " + dozierender.getFakultaet() + " mit der Büronummer " + dozierender.getBueronummer() + ".");
+    }
+
 }
 
