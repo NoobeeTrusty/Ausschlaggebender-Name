@@ -4,7 +4,7 @@ public class Lehrveranstaltung {
     private Dozierender dozierender;
     private Studierender[] studierender = new Studierender[50];
     private Vorlesungsstunde[] vorlesungsstunden = new Vorlesungsstunde[15];
-    private Praktikumsstunden[] praktikumsstunden = new praktikumsstunden[3];
+    private Praktikumsstunden[] praktikumsstunden = new Praktikumsstunden[3];
     
     public Lehrveranstaltung(String titel, Dozierender dozierender, Studierender[] studierender, Vorlesungsstunde[] vorlesungsstunden, Praktikumsstunden[] praktikumsstunden) {
         this.titel = titel;
