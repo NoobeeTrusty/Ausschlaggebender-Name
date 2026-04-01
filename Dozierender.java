@@ -24,6 +24,9 @@ public class Dozierender {
 
     public void zeigeFeedback() {
         for (int i = 0; i < this.feedback.length; i++) {
+            if (feedback[i] == null) {
+                break;
+            }
             System.out.println("Feedback " + (i+1) + ": " + this.feedback[i]);
         }
     }
@@ -33,7 +36,7 @@ public class Dozierender {
     }
 
     public void feedbackErhalten(Studierender student, String feedback) {
-        if (this.feedback.length < 20) {
+        if (this.feedback[19] == null) {
             for(int i = 0; i < this.feedback.length; i++) {
                 if (this.feedback[i] == null) {
                     this.feedback[i] = feedback;

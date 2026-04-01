@@ -1,11 +1,11 @@
 public class Vorlesungsstunde {
     
     private String thema;
-    private int datum;
-    private int uhrzeit;
+    private String datum;
+    private String uhrzeit;
     private int raum;
 
-    public Vorlesungsstunde(String thema, int datum, int uhrzeit, int raum){
+    public Vorlesungsstunde(String thema, String datum, String uhrzeit, int raum){
         this.thema = thema;
         this.datum = datum;
         this.uhrzeit = uhrzeit;

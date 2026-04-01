@@ -52,6 +52,8 @@ public class Lehrveranstaltung {
 
     public void presentDetails() {
         System.out.println("Die Informationen zur Veranstaltung lauten: " + titel + ", " + dozierender + ", " + studierender.length + ", "+ vorlesungsstunden.length + ", "+ praktikumsstunden.length);
+        System.out.println();
+        System.out.println();
     }
 
 }

@@ -23,5 +23,6 @@ public class Praktikumsstunden {
         for(String ag : aufgaben) {
             System.out.println(ag);
         }
+        System.out.println();
     }
 }
