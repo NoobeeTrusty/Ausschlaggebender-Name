@@ -20,22 +20,27 @@ public class App {
         Lisa.frageStellen(Prof, "Wann findet die Vorlesung statt?");
         Prof.frageBeantworten(Lisa, "Einen Moment bitte.");
         Nestler.detailsVorlesung();
+        System.out.println();
         
         Lisa.frageStellen(Prof, "Wann findet die Praktikumsstunde statt?");
         H.zeigeDetails();
+        System.out.println();
 
         Lisa.sprechstundenanfrage(Prof, "Können Sie mir Feedback zu meiner Abgabe bitte geben?");
         Prof.feedbackErhalten(Lisa, "Sie haben Chatgpt verwendet!:/");
         Prof.zeigeFeedback();
+        System.out.println();
 
         SWE.addStudierender(Joshua);
         SWE.addStudierender(Linus);
         SWE.removeStudierender(Linus);
         SWE.addVorlesung(Nestler);
         SWE.addPraktikum(H);
+        System.out.println();
 
         Lisa.frageStellen(Prof, "Wann findet die Lehrveranstaltung statt?");
         SWE.presentDetails();
+        System.out.println();
         
     }
 }
